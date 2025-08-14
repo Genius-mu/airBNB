@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik+Wet+Paint&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family:  "Playfair Display"; */
+}
+
+body {
+    background-color: brown;
+    background: rgba(0, 0, 0, .4)url(image/camille-brodard-1pSBUFx6Pa4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 6em;
+    /* background-color: red; */
+    align-items: center;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+header .logo h2 {
+    font-family: "Rubik Wet Paint", system-ui;
+    color: #ff00;
+    -webkit-text-stroke: .7px #fff;
+    text-shadow: 0 0 10px #fff;
+    font-weight: 200;
+}
+
+.header_container nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_container nav a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+    transition: .3s all;
+}
+
+header nav a.active {
+    font-weight: 600;
+    color: forestgreen;
+    text-shadow: 0 0 2px forestgreen;
+}
+
+.header_container nav a:not(:last-child) {
+    padding-right: 20px;
+}
+
+.header_container nav a:hover {
+    color: forestgreen;
+    text-shadow: 0 0 2px forestgreen;
+}
+
+
+.sec1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 23em;
+    /* background-color: #ff0000; */
+}
+
+.sec1_cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1em;
+}
+
+.sec1_cont p {
+    color: #fff;
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.btn1 {
+    display: flex;
+    justify-content: center;
+    column-gap: 1em;
+}
+
+.btn1 button {
+    padding: 10px 25px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: orangered; */
+    background-color: #ff00;
+    border: 1px solid #fff;
+    font-size: 15px;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.btn1 button::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, .7)url(image/nicolas-weldingh-YuAvuyIM6Zo-unsplash.jpg); */
+    /* background-size: contain; */
+    /* background: orangered; */
+    /* background-blend-mode: darken; */
+    /* box-shadow: 0 0 20px orangered; */
+    background: forestgreen;
+    box-shadow: 0 0 20px forestgreen;
+    border-radius: 10px;
+    z-index: -1;
+    transition: .9s all;
+    right: 0;
+    overflow: hidden;
+}
+
+.btn1 button:hover::before {
+    width: 100%;
+    left: 0;
+    right: unset;
+}
+
+.btn1 button:nth-child(1) {
+    background-color: forestgreen;
+}
+
+.btn1 button:hover,
+.btn1 button:nth-child(1) {
+    /* border: 1px solid orangered; */
+    border: 1px solid forestgreen;
+}
+
+.sec2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    padding: 5% 0;
+}
+
+.sec2_container {
+    width: 90%;
+    display: flex;
+    column-gap: 1em;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.inner1 {
+    width: 16em;
+    height: 20em;
+    background: url(image/home1.webp);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding: 1.5%;
+    /* align-items: center; */
+    flex-direction: column;
+    row-gap: 1em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: red;
+    border-radius: 20px;
+    border: 1px solid #fff;
+}
+
+.inner1 h4 {
+    color: #fff;
+    -webkit-text-stroke: .7px #000;
+    font-weight: normal;
+    font-size: 22px;
+    font-family: "Rubik Wet Paint", system-ui;
+    opacity: 0;
+    transition: .5s;
+    transform: translate(-10%);
+}
+
+.inner1 h4 span {
+    transform: translateX(-10%);
+    background: forestgreen;
+}
+
+.inner1 p {
+    color: #fff;
+    font-size: 18px;
+    font-family: "Playfair Display", serif;
+    opacity: 0;
+    transition: .5s;
+}
+
+.inner1 button {
+    width: 70%;
+    height: 2em;
+    font-size: 15px;
+    background: forestgreen;
+    border: none;
+    border-radius: 10px;
+    text-shadow: 0 0 13px #000;
+    cursor: pointer;
+    color: #fff;
+    font-family: "Playfair Display", serif;
+    box-shadow: 1px 1px 4px #b9b9b9 inset, -1px -1px 4px #000 inset;
+    opacity: 0;
+    transition: .5s;
+    transform: translate(-10%);
+}
+
+.inner1:hover {
+    background: rgba(0, 0, 0, .8)url(image/home1.webp);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.inner1:nth-child(2) {
+    background: url(image/home8.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.inner1:nth-child(2):hover {
+    background: rgba(0, 0, 0, .8)url(image/home8.webp);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.inner1:nth-child(3) {
+    background: url(image/house9.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.inner1:nth-child(3):hover {
+    background: rgba(0, 0, 0, .8)url(image/house9.webp);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.inner1:nth-child(4) {
+    background: url(image/home2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.inner1:nth-child(4):hover {
+    background: rgba(0, 0, 0, .8)url(image/home2.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.inner1:hover h4 {
+    opacity: 1;
+    transform: translate(3%);
+}
+
+.inner1:hover .inner1 h4 span {
+    transform: translateX(3%);
+}
+
+.inner1:hover p {
+    opacity: 1;
+}
+
+.inner1 button:hover {
+    background: rgb(25, 118, 25);
+    transition: 0;
+}
+
+.inner1:hover button {
+    opacity: 1;
+    transform: translateY(-20%);
+}
+
+.sec3, .sec4 {
+    width: 100%;
+    height: 100%;
+    padding: 5% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2em;
+}
+
+.head1, .head2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1em;
+}
+
+.head1 p, .head2 p {
+    color: #fff;
+    font-size: 18px;
+    font-family: "Playfair Display", serif;
+    max-width: 650px;
+    text-align: center;
+    text-shadow: 0 0 7px #fff;
+    font-weight: 600;
+}
+
+.head1 h2, .head2 h2 {
+    font-family: "Rubik Wet Paint", system-ui;
+    color: #fff;
+    -webkit-text-stroke: .2px #000;
+    font-size: 40px;
+    text-shadow: 0 0 10px #fff;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20em;
+    height: fit-content;
+    padding: 2% 1%;
+    background-color: forestgreen;
+    border-radius: 20px;
+    /* border: 1px solid #fff; */
+    box-shadow: 1px 1px 8px #fff, -3px -3px 8px #000, 1px 1px 8px #fff inset, inset -3px -3px 8px #000;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    row-gap: 1em;
+    /* background-color: red; */
+}
+
+form span {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5em;
+    width: 100%;
+}
+
+form span label {
+    font-size: 16px;
+    padding-left: 10px;
+    /* color: ; */
+    font-family: "Playfair Display", serif;
+}
+
+form span input {
+    width: 100%;
+    font-size: 14px;
+    /* padding: 3%; */
+    height: 3em;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: unset;
+    outline: unset;
+}
+
+form span textarea {
+    height: 10em;
+    border-radius: 20px;
+    padding: 5%;
+    border: none;
+    outline: none;
+    resize: none;
+}
+form span textarea::-webkit-scrollbar {
+    width: 1em;
+    /* background: rgba(0, 0, 0, .4); */
+    background: forestgreen;
+    /* background: rgb(53, 0, 79); */
+    border-radius: 14px;
+}
+form span textarea::-webkit-scrollbar-thumb {
+    background: cyan;
+    border-radius: 17px;
+    box-shadow: 0 0 20px cyan;
+}

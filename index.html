@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>resQ | Real Estate Site..</title>
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      @keyframes appear {
+        from {
+          opacity: 0;
+          scale: 0.5;
+        }
+
+        to {
+          opacity: 1;
+          scale: 1;
+        }
+      }
+
+      @keyframes appear2 {
+        from {
+          opacity: 0;
+          transform: translateY(-100px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
+
+      @keyframes appear3 {
+        from {
+          opacity: 0;
+          transform: translateX(-200px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+
+      section,
+      .inner10:nth-child(4) {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry cover 40%;
+      }
+
+      section:nth-child(4),
+      .div4,
+      .inner10 {
+        animation: appear3 linear;
+        animation-timeline: view();
+        animation-range: entry cover 40%;
+      }
+
+      section:nth-child(5),
+      .div3 {
+        animation: appear2 linear;
+        animation-timeline: view();
+        animation-range: entry cover 40%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <h1>r<span>es</span>Q</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="">Service</a></li>
+          <li><a href="">Agency</a></li>
+          <li><a href="">Case study</a></li>
+          <li><a href="">Resources</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger">
+        <div class="controls">
+          <img
+            src="image/home1.webp"
+            alt=""
+            style="border: 2px solid #fff"
+            class="open"
+          />
+          <img
+            src="image/house9.webp"
+            alt=""
+            style="border: 2px solid #ff0000"
+            class="close"
+          />
+        </div>
+        <ul id="hamNav">
+          <li><a href="">Service</a></li>
+          <li><a href="">Agency</a></li>
+          <li><a href="">Case study</a></li>
+          <li><a href="">Resources</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+      <div class="btn1">
+        <a href=""><i class="bx bx-group"></i></a>
+        <a href="">Get started</a>
+      </div>
+    </header>
+    <section class="sec1">
+      <div class="cont1">
+        <div class="div1">
+          <span>
+            <h4>Where Dreams Turn Into Addresses</h4>
+          </span>
+        </div>
+        <div class="div2">
+          <div class="cont1_inner1">
+            <h4>Skyline Heights Resident</h4>
+            <p>Downloan, New York City</p>
+            <h3>$2,500/month</h3>
+            <div class="inner">
+              <span>
+                <i></i>
+                <p>4</p>
+              </span>
+              <span>
+                <i></i>
+                <p>4</p>
+              </span>
+              <span>
+                <i></i>
+                <p>4</p>
+              </span>
+            </div>
+          </div>
+          <div class="cont1_inner2">
+            <h3>Best Property</h3>
+            <form action="">
+              <div class="form_inner">
+                <div class="inputs">
+                  <label for="name">FirstName</label>
+                  <input
+                    type="text"
+                    name="FirstName"
+                    id="name"
+                    placeholder="First Name"
+                  />
+                </div>
+                <div class="inputs">
+                  <label for="name">LastName</label>
+                  <input
+                    type="text"
+                    name="LastName"
+                    id="name"
+                    placeholder="Last Name"
+                  />
+                </div>
+              </div>
+              <div class="inputs">
+                <label for="Email">Email</label>
+                <input
+                  type="email"
+                  name="Email"
+                  id="Email"
+                  placeholder="Email Address"
+                />
+              </div>
+              <div class="inputs">
+                <label for="ApartmentName">Property Type</label>
+                <input
+                  type="email"
+                  name="ApartmentName"
+                  id="ap"
+                  placeholder="Apartment Name"
+                />
+              </div>
+              <button>Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="sec2"></section> -->
+    <section class="sec3">
+      <div class="sec3_container">
+        <div class="sec3_cont1">
+          <div>
+            <h3>Homebuying Made Simple & Reliable</h3>
+          </div>
+          <div>
+            <div>
+              <a href="">SEARCH PROPERTIES</a>
+              <i class="bx bxs-search-alt-2"></i>
+            </div>
+            <div class="inner2">
+              <p>
+                Lorem ipsum dolor sit amet consectetur elit. Minima nobis quam
+                odit mollitia in quidem quo fugit itaque excepturi maxime libero
+                fugiat omnis laboriosam esse perferendis, consectetur expedita
+                aspernatur!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="sec3_cont2">
+          <div>
+            <span>
+              <i class="bx bxs-sushi"></i>
+            </span>
+            <span>
+              <a href="">submit</a>
+            </span>
+          </div>
+          <div>
+            <span>
+              <i class="bx bx-cloud-lightning"></i>
+            </span>
+            <span>
+              <a href="">submit</a>
+            </span>
+          </div>
+          <div class="grid_cont">
+            <div>
+              <h4>+145</h4>
+              <p>objects</p>
+            </div>
+            <div>
+              <span>
+                <a href="">See All</a>
+                <a href=""><i class="bx bxs-brightness"></i></a>
+              </span>
+            </div>
+          </div>
+          <div>
+            <span>
+              <i class="bx bxs-analyse"></i>
+            </span>
+            <span>
+              <a href="">submit</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec4">
+      <div class="sec4_overAll_container">
+        <div class="sec4_cont1">
+          <h3>Featured Listings Chosen</h3>
+          <p>
+            Share documents, assign tasks, and communicate in real time- weather
+            your team is in the office or working remotely.
+          </p>
+        </div>
+        <div class="sec4_cont2">
+          <div>
+            <img
+              src="image/20250623_074328.jpg"
+              alt="house picture"
+              loading="lazy"
+            />
+          </div>
+
+          <div>
+            <div>
+              <div>
+                <!-- <i class='bx bxs-extension' ></i> -->
+                <i class="bx bx-money-withdraw"></i>
+                <h3>Lowest Commission</h3>
+                <p>
+                  You no longer have to negotiate commissions and haggle with
+                  other agents, it only costs 2%!
+                </p>
+              </div>
+
+              <div>
+                <i class="bx bx-bar-chart-square"></i>
+                <h3>Overall Control</h3>
+                <p>
+                  You no longer have to negotiate commissions and haggle with
+                  other agents, it only costs 2%!
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <i class="bx bxs-spa"></i>
+                <h3>Property Insurance</h3>
+                <p>
+                  You no longer have to negotiate commissions and haggle with
+                  other agents, it only costs 2%!
+                </p>
+              </div>
+
+              <div>
+                <i class="bx bx-compass"></i>
+                <h3>Best Price</h3>
+                <p>
+                  You no longer have to negotiate commissions and haggle with
+                  other agents, it only costs 2%!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec5">
+      <div class="sec5_overAll_cont">
+        <div class="sec5_cont1">
+          <h4>Trusted by the world most innovative teams</h4>
+        </div>
+        <div class="inner3">
+          <div class="inner_cnt1">
+            <span>
+              <i></i>
+              <h2>Acme</h2>
+            </span>
+            <span>
+              <i></i>
+              <h2>Acme</h2>
+            </span>
+            <span>
+              <i></i>
+              <h2>Acme</h2>
+            </span>
+            <span>
+              <i></i>
+              <h2>Acme</h2>
+            </span>
+          </div>
+          <div class="inner_cnt1">
+            <span>
+              <i></i>
+              <h2>Acme</h2>
+            </span>
+            <span>
+              <i></i>
+              <h2>Acme</h2>
+            </span>
+            <span>
+              <i></i>
+              <h2>Acme</h2>
+            </span>
+            <span>
+              <i></i>
+              <h2>Acme</h2>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec6">
+      <div class="sec6_cont1">
+        <span>
+          <i></i>
+          <h4>join Waitlist</h4>
+        </span>
+        <div class="div3">
+          <h2>Get Early Access Now</h2>
+          <p>
+            Join our waitlist to be the first to access resQ and stay updated on
+            launch.
+          </p>
+        </div>
+        <div class="div4">
+          <span>
+            <input type="checkbox" name="" id="" checked />
+            <p>Early Access</p>
+          </span>
+          <span>
+            <input type="checkbox" name="" id="" checked />
+            <p>Exclusive Updates</p>
+          </span>
+          <span>
+            <input type="checkbox" name="" id="" checked />
+            <p>Priority Notifications</p>
+          </span>
+        </div>
+      </div>
+      <div class="sec6_cont2">
+        <form action="https://formspree.io/f/xovlbdoa" method="POST">
+          <div class="input1">
+            <label for="">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="Name"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="input1">
+            <label for="">Email</label>
+            <input
+              type="email"
+              name="Email"
+              id="Email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="input1">
+            <label for="">Property Type</label>
+            <input
+              type="text"
+              name="Property Type"
+              id="PropertyType"
+              placeholder="Enter your Property Name/Apartment"
+            />
+          </div>
+
+          <button type="submit">Request Beta Access</button>
+        </form>
+      </div>
+    </section>
+    <section class="sec7">
+      <div class="sec7_cont1">
+        <span>
+          <i></i>
+          <h4>Faq's</h4>
+        </span>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="sec7_cont2">
+        <div class="display">
+          <div class="head1">
+            <h3 style="--clr: blue">
+              What is <strong>resQ's</strong> primary function?
+            </h3>
+            <span>
+              <i class="p_open">+</i>
+              <i class="p_close">-</i>
+            </span>
+          </div>
+          <div class="drop_content">
+            <p id="drop">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eum
+              atque nobis sed cupiditate quae nemo alias, nihil aliquid suscipit
+              iste doloribus aliquam laboriosam fugit, asperiores tempore ipsum
+              inventore. Magnam?
+            </p>
+          </div>
+        </div>
+
+        <div class="display">
+          <div class="head1">
+            <h3 style="--clr: blue">
+              How does <strong>resQ</strong> improve team collaboration?
+            </h3>
+            <span>
+              <i class="p_open">+</i>
+              <i class="p_close">-</i>
+            </span>
+          </div>
+          <div class="drop_content">
+            <p id="drop">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eum
+              atque nobis sed cupiditate quae nemo alias, nihil aliquid suscipit
+              iste doloribus aliquam laboriosam fugit, asperiores tempore ipsum
+              inventore. Magnam?
+            </p>
+          </div>
+        </div>
+
+        <div class="display">
+          <div class="head1">
+            <h3 style="--clr: #000">
+              Can I access <strong>resQ</strong> Online?
+            </h3>
+            <span>
+              <i class="p_open">+</i>
+              <i class="p_close">-</i>
+            </span>
+          </div>
+          <div class="drop_content">
+            <p id="drop">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eum
+              atque nobis sed cupiditate quae nemo alias, nihil aliquid suscipit
+              iste doloribus aliquam laboriosam fugit, asperiores tempore ipsum
+              inventore. Magnam?
+            </p>
+          </div>
+        </div>
+
+        <div class="display">
+          <div class="head1">
+            <h3 style="--clr: blue">
+              Is <strong>resQ</strong> available on mobile devices?
+            </h3>
+            <span>
+              <i class="p_open">+</i>
+              <i class="p_close">-</i>
+            </span>
+          </div>
+          <div class="drop_content">
+            <p id="drop">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eum
+              atque nobis sed cupiditate quae nemo alias, nihil aliquid suscipit
+              iste doloribus aliquam laboriosam fugit, asperiores tempore ipsum
+              inventore. Magnam?
+            </p>
+          </div>
+        </div>
+
+        <div class="display">
+          <div class="head1">
+            <h3 style="--clr: blue">
+              What security deaturres does <strong>resQ</strong> offer?
+            </h3>
+            <span>
+              <i class="p_open">+</i>
+              <i class="p_close">-</i>
+            </span>
+          </div>
+          <div class="drop_content">
+            <p id="drop">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eum
+              atque nobis sed cupiditate quae nemo alias, nihil aliquid suscipit
+              iste doloribus aliquam laboriosam fugit, asperiores tempore ipsum
+              inventore. Magnam?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer_container">
+        <div class="footer1">
+          <h2>resQ</h2>
+          <p>
+            Lorem ipsum, dolor sit amet adipisicing elit. Eaque sed suscipit.
+            Error earum maiores totam commodi quia repellat, pariatur facilis.
+          </p>
+        </div>
+        <div class="footer2">
+          <div class="first_nav">
+            <h3>Company</h3>
+            <nav>
+              <a href="">About</a>
+              <a href="">Services</a>
+              <a href="">Pricing</a>
+              <a href="">Contact</a>
+              <a href="">FAQ's</a>
+            </nav>
+          </div>
+
+          <div class="first_nav">
+            <h3>HElp</h3>
+            <nav>
+              <a href="">About</a>
+              <a href="">Services</a>
+              <a href="">Pricing</a>
+              <a href="">Contact</a>
+              <a href="">FAQ's</a>
+            </nav>
+          </div>
+
+          <div class="first_nav">
+            <h3>HElp</h3>
+            <div class="end_div">
+              <input
+                type="email"
+                name=""
+                id=""
+                placeholder="Enter your email address"
+              />
+              <a href="">Subscribe Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="index.js"></script>
+</html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Holeey | Cartrering Services</title>
+    <link rel="stylesheet" href="cartering.css" type="text/css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <style>
+      @keyframes appear {
+        from {
+          opacity: 0;
+          scale: 0.5;
+        }
+
+        to {
+          opacity: 1;
+          scale: 1;
+        }
+      }
+
+      @keyframes appear2 {
+        from {
+          opacity: 0;
+          transform: translateY(-100px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
+
+      @keyframes appear3 {
+        from {
+          opacity: 0;
+          transform: translateX(-200px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+
+      section,
+      .inner10:nth-child(4) {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry cover 40%;
+      }
+
+      section:nth-child(4),
+      .div4,
+      .inner10 {
+        animation: appear2 linear;
+        animation-timeline: view();
+        animation-range: entry cover 40%;
+      }
+
+      section:nth-child(5),
+      .div3 {
+        animation: appear3 linear;
+        animation-timeline: view();
+        animation-range: entry cover 40%;
+      }
+
+      .goUp {
+        position: absolute;
+        z-index: 1;
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        right: 0;
+        bottom: 0;
+      }
+
+      .goUp a {
+        position: fixed;
+        background-color: red;
+        color: #fff;
+        border-radius: 50%;
+        height: 2.5em;
+        margin-bottom: 10px;
+        width: 2.5em;
+        text-decoration: none;
+        font-weight: bold;
+        text-shadow: 1px 0 7px #fff, -1px 0 7px #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 0;
+        bottom: 0;
+      }
+    </style>
+  </head>
+
+  <body id="up">
+    <header>
+      <div class="header_container">
+        <div class="logo">
+          <a href="">hol<span>eyFo</span>.</a>
+        </div>
+        <nav>
+          <a href="" class="active">Home</a>
+          <a href="">Menu</a>
+          <a href="">Service</a>
+          <a href="">Shop</a>
+          <a href="">Contact Us</a>
+        </nav>
+
+        <div class="Hamburger">
+          <div class="ham_controls">
+            <i class="open">o</i>
+            <i class="close">c</i>
+          </div>
+          <div class="hambur_content">
+            <a href="" class="active">Home</a>
+            <a href="">Menu</a>
+            <a href="">Service</a>
+            <a href="">Shop</a>
+            <a href="">Contact Us</a>
+          </div>
+        </div>
+        <div class="header_end">
+          <div class="search">
+            <i class="bx bx-search-alt-2 bx-rotate-90"></i>
+            <input
+              type="search"
+              placeholder="Search"
+              id="search"
+              name="search"
+            />
+          </div>
+          <a href=""><i class="bx bx-cart"></i></a>
+        </div>
+      </div>
+    </header>
+    <section class="sec1">
+      <div class="sec1_container">
+        <div class="container1">
+          <h2><span>Food</span> is only one aspect of experience.</h2>
+          <p>
+            We are the most favored and quickest meal delivery service in the
+            entire Lagos. Find your favorite dish by searching.
+          </p>
+          <div class="btn1">
+            <a href="">Order Immediately</a>
+            <a href="">Reserve a Table</a>
+          </div>
+        </div>
+        <div class="container2">
+          <!-- <img src="image/images__28_-removebg-preview.png" alt="" /> -->
+          <img src="image/images__29_-removebg-preview.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="sec2">
+      <div class="sec2_container">
+        <h2>Popular Menus</h2>
+        <div class="container3">
+          <div class="cont3_inner">
+            <div class="content1">
+              <span>
+                <h2>Special Dessert</h2>
+                <h3>$42.00</h3>
+              </span>
+              <span>
+                <img src="image/images__27_-removebg-preview.png" alt="" />
+              </span>
+            </div>
+            <div class="content2">
+              <button type="submit">Order Now</button>
+              <p>&hearts;</p>
+            </div>
+          </div>
+
+          <div class="cont3_inner">
+            <div class="content1">
+              <span>
+                <h2>Special Dessert</h2>
+                <h3>$42.00</h3>
+              </span>
+              <span>
+                <img src="image/images__17_-removebg-preview.png" alt="" />
+              </span>
+            </div>
+            <div class="content2">
+              <button type="submit">Order Now</button>
+              <p>&hearts;</p>
+            </div>
+          </div>
+
+          <div class="cont3_inner">
+            <div class="content1">
+              <span>
+                <h2>Special Dessert</h2>
+                <h3>$42.00</h3>
+              </span>
+              <span>
+                <img src="image/images__18_-removebg-preview.png" alt="" />
+              </span>
+            </div>
+            <div class="content2">
+              <button type="submit">Order Now</button>
+              <p>&hearts;</p>
+            </div>
+          </div>
+
+          <div class="cont3_inner">
+            <div class="content1">
+              <span>
+                <h2>Special Dessert</h2>
+                <h3>$42.00</h3>
+              </span>
+              <span>
+                <img src="image/images__19_-removebg-preview.png" alt="" />
+              </span>
+            </div>
+            <div class="content2">
+              <button type="submit">Order Now</button>
+              <p>&hearts;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec3">
+      <div class="sec3_container">
+        <div class="head1">
+          <h3>Special <span>Offer</span></h3>
+          <hr />
+        </div>
+        <div class="container4">
+          <img src="image/images (24).jpeg" alt="" />
+          <div class="cont4_content">
+            <h3>Get <span>50%</span> Off on Curry</h3>
+            <p>
+              We offer <span>50%</span> of this food, we want you all to try
+              HoleyFood which has a good taste that everyone should try.
+            </p>
+            <a href="">Order Now <i class="bx bx-cart"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="goUp">
+      <a href="#up">&uparrow;</a>
+    </div>
+    <section class="sec4">
+      <div class="sec4_container">
+        <div class="head2">
+          <h3>Review From Our <span>Customers</span> Say</h3>
+          <hr />
+        </div>
+
+        <div class="container5 swiper">
+          <div class="slider-wrapper">
+            <div class="card-list swiper-wrapper">
+              <div class="card-item swiper-slide">
+                <div class="upper">
+                  <img src="image/images (30).jpeg" alt="" class="user-image" />
+                  <h2 class="user-name">Rachael Richardo</h2>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                  dolorum pariatur eligendi deleniti harum ullam sed, velit
+                  cupiditate praesentium. Deserunt velit libero accusantium non,
+                  sit voluptatum et ullam repellendus nam?
+                </p>
+              </div>
+
+              <div class="card-item swiper-slide">
+                <div class="upper">
+                  <img src="image/images (31).jpeg" alt="" class="user-image" />
+                  <h2 class="user-name">Gloria Rose</h2>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                  dolorum pariatur eligendi deleniti harum ullam sed, velit
+                  cupiditate praesentium. Deserunt velit libero accusantium non,
+                  sit voluptatum et ullam repellendus nam?
+                </p>
+              </div>
+
+              <div class="card-item swiper-slide">
+                <div class="upper">
+                  <img src="image/images (32).jpeg" alt="" class="user-image" />
+                  <h2 class="user-name">Paul Victor</h2>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                  dolorum pariatur eligendi deleniti harum ullam sed, velit
+                  cupiditate praesentium. Deserunt velit libero accusantium non,
+                  sit voluptatum et ullam repellendus nam?
+                </p>
+              </div>
+
+              <div class="card-item swiper-slide">
+                <div class="upper">
+                  <img src="image/images (33).jpeg" alt="" class="user-image" />
+                  <h2 class="user-name">Mary Esther</h2>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                  dolorum pariatur eligendi deleniti harum ullam sed, velit
+                  cupiditate praesentium. Deserunt velit libero accusantium non,
+                  sit voluptatum et ullam repellendus nam?
+                </p>
+              </div>
+
+              <div class="card-item swiper-slide">
+                <div class="upper">
+                  <img
+                    src="image/20250623_074328.jpg"
+                    alt=""
+                    class="user-image"
+                  />
+                  <h2 class="user-name">Jose Lan</h2>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                  dolorum pariatur eligendi deleniti harum ullam sed, velit
+                  cupiditate praesentium. Deserunt velit libero accusantium non,
+                  sit voluptatum et ullam repellendus nam?
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer_container">
+        <div class="footer_content1">
+          <div class="footer_div1">
+            <h2>Contact</h2>
+            <nav>
+              <a href="">0902 036 5334</a>
+              <a href="">3, Odoguyan, Ogun Nigeria</a>
+              <a href="">ojemgbe@gmail.com</a>
+            </nav>
+          </div>
+
+          <div class="footer_div1">
+            <h2>Navigate</h2>
+            <nav>
+              <a href="">Home</a>
+              <a href="">Menu</a>
+              <a href="">About</a>
+              <a href="">Contact</a>
+              <a href="">Book Now</a>
+            </nav>
+          </div>
+        </div>
+
+        <div class="footer_content2">
+          <div class="footer_div1">
+            <h2>Menu</h2>
+            <nav>
+              <a href="">Breakfast</a>
+              <a href="">Lunch</a>
+              <a href="">Dinner</a>
+            </nav>
+          </div>
+
+          <div class="footer_div1">
+            <h2>Follow Us</h2>
+            <nav>
+              <a href="">Facebook</a>
+              <a href="">Instagram</a>
+              <a href="">LinkedIn</a>
+              <a href="">Tweeter</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="footer_end">
+        <a href="">&copy;2025.HoleyFood | All right reserved.</a>
+        <nav>
+          <a href="">License</a>
+          <a href="">Changelog</a>
+          <a href="">Style Guide</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="cartrering.js"></script>
+</html>

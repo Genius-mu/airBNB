@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #042929;
+  min-height: 100vh;
+}
+.youtube {
+  width: 100px;
+  height: 60px;
+  background: #f00;
+  border-radius: 10px;
+  position: relative;
+  animation: introY 1.7s ease;
+}
+.youtube::after {
+  content: "";
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 4px;
+  width: 100%;
+  background: #f00;
+  animation: introB 1.7s ease;
+  /* left: 75px; */
+  /* background: #a50000; */
+}
+.play {
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  position: absolute;
+  left: calc(50% + 5px);
+  transform: translateX(-50%);
+  clip-path: polygon(0 0, 0% 100%, 80% 50%);
+  animation: introL 1.7s ease;
+}
+
+@keyframes introY {
+  50% {
+    height: 3px;
+    width: 150px;
+    border-radius: 0;
+    background: #fff;
+  }
+  85% {
+    height: 3px;
+    width: 150px;
+    border-radius: 0;
+    background: #fff;
+  }
+  to {
+    width: 0;
+    height: 3px;
+  }
+}
+@keyframes introB {
+  75% {
+    left: -75px;
+  }
+  to {
+    left: 75px;
+  }
+}
+@keyframes introL {
+  75% {
+    left: 20%;
+  }
+  80% {
+    left: 20%;
+  }
+  to {
+    left: calc(50% + 5px);
+  }
+}

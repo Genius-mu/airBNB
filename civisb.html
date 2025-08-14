@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Civisb</title>
+    <link rel="stylesheet" href="civisb.css" type="text/css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+      @keyframes appear {
+        from {
+          opacity: 0;
+          scale: 0.5;
+        }
+
+        to {
+          opacity: 1;
+          scale: 1;
+        }
+      }
+
+      @keyframes appear2 {
+        from {
+          opacity: 0;
+          transform: translateY(-100px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
+
+      @keyframes appear3 {
+        from {
+          opacity: 0;
+          transform: translateX(-200px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+
+      section,
+      .inner10:nth-child(4) {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry cover 40%;
+      }
+
+      section:nth-child(4),
+      .div4,
+      .inner10 {
+        animation: appear2 linear;
+        animation-timeline: view();
+        animation-range: entry cover 40%;
+      }
+
+      section:nth-child(5),
+      .div3 {
+        animation: appear3 linear;
+        animation-timeline: view();
+        animation-range: entry cover 40%;
+      }
+
+      .goUp {
+        position: absolute;
+        z-index: 1;
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        right: 0;
+        bottom: 0;
+      }
+
+      .goUp a {
+        position: fixed;
+        background-color: blue;
+        color: #fff;
+        border-radius: 50%;
+        height: 3em;
+        width: 3em;
+        text-decoration: none;
+        font-weight: bold;
+        text-shadow: 1px 0 7px #fff, -1px 0 7px #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 0;
+        bottom: 0;
+      }
+    </style>
+  </head>
+
+  <body id="up">
+    <header>
+      <div class="header_container">
+        <div class="logo">
+          <h2 data-url="http://127.0.0.1:5501/civisb.html">Civisb</h2>
+        </div>
+        <nav id="normal">
+          <ul>
+            <li><a href="">Service</a></li>
+            <li><a href="">Agency</a></li>
+            <li><a href="">Case Study</a></li>
+            <li><a href="">Resources</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header_end">
+          <a href=""><i class='bx bx-cube-alt'></i></a>
+          <a href="">Get Started</a>
+        </div>
+
+        <div class="hamburger">
+          <div class="controls">
+            <img src="image/home1.webp" alt="" class="open" />
+            <img src="image/home8.webp" alt="" class="close" />
+          </div>
+          <nav id="ham_navigation">
+            <ul>
+              <li><a href="">Service</a></li>
+              <li><a href="">Agency</a></li>
+              <li><a href="">Case Study</a></li>
+              <li><a href="">Resources</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="sec1">
+      <div class="sec1_container">
+        <div class="div1">
+          <h2>Your Dream Projects Starts with Expert Builders</h2>
+          <span>
+            <img src="image/20250623_074328.jpg" alt="" />
+            <img src="image/home2.jpg" alt="" />
+            <img src="image/house9.webp" alt="" />
+          </span>
+        </div>
+        <div class="div2">
+          <div class="inner1">
+            <span>
+              <h3>*</h3>
+              <p>
+                From residential buildings to commercial infracstructure, we
+                deliver quality construction services with integrity and
+                expertise.
+              </p>
+            </span>
+          </div>
+          <div class="inner2">
+            <span>
+              <a href="">Innovative *</a>
+              <a href="">Social *</a>
+              <a href="">Advance *</a>
+            </span>
+            <span>
+              <a href="">Real-Time Analysis *</a>
+              <a href="">Advance *</a>
+              <a href="">Agile Approach *</a>
+            </span>
+          </div>
+        </div>
+        <div class="div3">
+          <div class="inner3">
+            <span>
+              <h2>50+</h2>
+              <p>In 48 countries, we work global team to help clients</p>
+            </span>
+            <hr />
+          </div>
+          <div class="inner3">
+            <span>
+              <h2>2M</h2>
+              <p>Active Users in the world</p>
+            </span>
+            <hr />
+          </div>
+          <div class="inner3">
+            <span>
+              <h2>85%</h2>
+              <p>
+                We started with a ebellious mindset and set ourselves the
+                challenge
+              </p>
+            </span>
+            <hr />
+          </div>
+          <div class="inner3">
+            <span>
+              <h2>90%</h2>
+              <p>
+                We started with a ebellious mindset and set ourselves the
+                challenge
+              </p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec2">
+      <div class="sec2_container">
+        <div class="head1">
+          <h2>What We Build, We Build with Purpose</h2>
+          <p>
+            Full-service construction team handles every phase with precision.
+          </p>
+        </div>
+        <div class="div4">
+          <div class="inner4">
+            <i class="bx bxs-coin-stack"></i>
+            <h3>Commercial Projects</h3>
+            <p>
+              Gain insights into areas where costs can be cut without
+              compromising quality, and eliminate redundacies in supply chains,
+              inventory, and staffing. Lower your operational costs and
+              reinvest.
+            </p>
+            <a href="">Learn More &rarr;</a>
+          </div>
+          <div class="inner4">
+            <i class='bx bxs-bulb'></i>
+            <h3>Civil Infracstructure</h3>
+            <p>
+              Gain insights into areas where costs can be cut without
+              compromising quality, and eliminate redundacies in supply chains,
+              inventory, and staffing. Lower your operational costs and
+              reinvest.
+            </p>
+            <a href="">Learn More &rarr;</a>
+          </div>
+          <div class="inner4">
+            <h3>Renovation & Remodelling</h3>
+            <a href="">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec3">
+      <div class="sec3_container">
+        <div class="head2">
+          <div class="inner5">
+            <h2>Built on Experience. Driven by Trust.</h2>
+          </div>
+          <div class="inner6">
+            <p>
+              Our commitment to quality, safety, and client satisfaction sets us
+              apart in the construction industry.
+            </p>
+            <a href="">Read More &neArr;</a>
+          </div>
+        </div>
+        <div class="div5">
+          <div class="inner7">
+            <span>
+              <a href="">&neArr;</a>
+            </span>
+          </div>
+          <div class="inner8">
+            <span>
+              <a href="">Rising populace</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec4">
+      <div class="sec4_container">
+        <h2>Trusted by 200+ top industry leading companies</h2>
+        <div class="inner9">
+          <span>
+            <i class='bx bx-target-lock'></i>
+            <a href="">Layers</a>
+          </span>
+          <span>
+            <i class='bx bx-cloud-lightning' ></i>
+            <a href="">Quotient</a>
+          </span>
+          <span>
+            <i class='bx bx-group' ></i>
+            <a href="">Circooles</a>
+          </span>
+          <span>
+            <i class='bx bx-store-alt' ></i>
+            <a href="">Hourglass</a>
+          </span>
+          <span>
+            <i class='bx bxs-sushi' ></i>
+            <a href="">Command+R</a>
+          </span>
+        </div>
+      </div>
+    </section>
+    <div class="goUp">
+      <a href="#up">&uparrow;</a>
+    </div>
+    <section class="sec5">
+      <div class="sec5_container">
+        <div class="head3">
+          <span>
+            <h3>Experts Behind Every Brick</h3>
+            <p>We believe that great buildings start with great people.</p>
+          </span>
+          <span>
+            <a href="">search properties</a>
+            <a href="">⇗</a>
+          </span>
+        </div>
+        <div class="div6">
+          <div class="inner10">
+            <img src="image/home1.webp" alt="" />
+            <span>
+              <h3>Wade Warren</h3>
+              <p>Senior Project Manager</p>
+              <div class="links">
+                <a href=""><i class='bx bxl-facebook'></i></a>
+                <a href=""><i class='bx bxl-linkedin' ></i></a>
+                <a href=""><i class='bx bxl-instagram' ></i></a>
+                <a href=""><i class='bx bxl-discord-alt' ></i></a>
+              </div>
+            </span>
+          </div>
+
+          <div class="inner10">
+            <img src="image/home1.webp" alt="" />
+            <span>
+              <h3>Wade Warren</h3>
+              <p>Senior Project Manager</p>
+              <div class="links">
+                <a href=""><i class='bx bxl-facebook'></i></a>
+                <a href=""><i class='bx bxl-linkedin' ></i></a>
+                <a href=""><i class='bx bxl-instagram' ></i></a>
+                <a href=""><i class='bx bxl-discord-alt' ></i></a>
+              </div>
+            </span>
+          </div>
+
+          <div class="inner10">
+            <img src="image/home1.webp" alt="" />
+            <span>
+              <h3>Wade Warren</h3>
+              <p>Senior Project Manager</p>
+              <div class="links">
+                <a href=""><i class='bx bxl-facebook'></i></a>
+                <a href=""><i class='bx bxl-linkedin' ></i></a>
+                <a href=""><i class='bx bxl-instagram' ></i></a>
+                <a href=""><i class='bx bxl-discord-alt' ></i></a>
+              </div>
+            </span>
+          </div>
+
+          <div class="inner10">
+            <img src="image/home1.webp" alt="" />
+            <span>
+              <h3>Wade Warren</h3>
+              <p>Senior Project Manager</p>
+              <div class="links">
+                <a href=""><i class='bx bxl-facebook'></i></a>
+                <a href=""><i class='bx bxl-linkedin' ></i></a>
+                <a href=""><i class='bx bxl-instagram' ></i></a>
+                <a href=""><i class='bx bxl-discord-alt' ></i></a>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer1">
+        <h3>Ready to build your next Project?</h3>
+        <a href="">Get Started</a>
+      </div>
+      <div class="footer2">
+        <div class="footer_content">
+          <h3>Contact</h3>
+          <nav>
+            <a href="">45 example, New York, 9CA</a>
+            <a href="">hello@example.com</a>
+            <a href="">+1 {num} 345-3255</a>
+          </nav>
+        </div>
+        <div class="footer_content">
+          <h3>Follow Us</h3>
+          <nav>
+            <a href="">LinkedIn</a>
+            <a href="">Instagram</a>
+            <a href="">Facebook</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="civisb.js"></script>
+</html>
