@@ -1,6 +1,6 @@
-let close = document.querySelector(".close");
+let close = document.querySelector("#close");
 let body = document.querySelector("body");
-let open = document.querySelector(".open");
+let open = document.querySelector("#open");
 let ham_content = document.querySelector(".hambur_content");
 ham_content.style.display = "none";
 

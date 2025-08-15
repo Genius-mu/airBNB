@@ -1,8 +1,8 @@
 let drop = document.querySelectorAll("#drop");
 let p_close = document.querySelectorAll(".p_close");
 let p_open = document.querySelectorAll(".p_open");
-let opn = document.querySelector(".open");
-let cls = document.querySelector(".close");
+let opn = document.querySelector("#open");
+let cls = document.querySelector("#close");
 let hamNav = document.querySelector("#hamNav");
 
 cls.style.display = "none";

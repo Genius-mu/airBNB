@@ -998,22 +998,17 @@ footer {
   height: fit-content;
   left: 0;
 }
-
 .hamburger .controls {
   display: flex;
   width: 100%;
-  /* position: absolute; */
   top: -5px;
   margin-right: 1em;
   justify-content: flex-end;
 }
-.hamburger .controls img {
-  width: 2em;
-  border-radius: 50%;
-  height: 2em;
-  cursor: pointer;
+.hamburger .controls i {
+  font-size: 20px;
+  color: #fff;
 }
-
 .hamburger ul {
   display: flex;
   flex-direction: column;
@@ -1028,7 +1023,7 @@ footer {
   transition: 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
   width: 100%;
   height: fit-content;
-  /* position: absolute; */
+  margin-top: 4.9%;
   top: 0;
 }
 
@@ -1201,6 +1196,13 @@ footer {
   .sec1 {
     margin-top: 0;
   }
+  .hamburger ul {
+    margin-top: 3%;
+    padding: 2%;
+  }
+  .hamburger ul li {
+    padding: 3% 2%;
+  }
 }
 @media (max-width: 700px) {
   .sec6_cont2 form {
@@ -1291,6 +1293,14 @@ footer {
     column-gap: 2em;
     flex-wrap: wrap;
     justify-content: flex-start;
+  }
+}
+@media (max-width: 600px) {
+  .hamburger ul {
+    margin-top: 5%;
+  }
+  .hamburger ul li {
+    padding: 9% 10%;
   }
 }
 @media (max-width: 450px) {
